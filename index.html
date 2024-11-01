@@ -1,1 +1,49 @@
-https://github.com/LCMLCMLCMLCMM/GalliumWebStyle/blob/main/index.html
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Simple Video Website</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 20px;  
+            background-color: #f4f4f4;  
+        }  
+        .video-list {  
+            display: flex;  
+            flex-wrap: wrap;  
+            gap: 20px;  
+        }  
+        .video-item {  
+            background-color: #fff;  
+            border-radius: 8px;  
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+            padding: 20px;  
+            text-align: center;  
+            width: calc(33% - 40px);  
+        }  
+        .video-item img {  
+            max-width: 100%;  
+            border-radius: 8px;  
+        }  
+        .video-item h3 {  
+            margin: 10px 0;  
+        }  
+        .video-player {  
+            margin-top: 20px;  
+            text-align: center;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h1>Simple Video Website</h1>  
+    <div class="video-list" id="videoList"></div>  
+    <div class="video-player" id="videoPlayer">  
+        <video id="video" width="600" controls></video>  
+    </div>  
+  
+    <script src="script.js"></script>  
+</body>  
+</html>
